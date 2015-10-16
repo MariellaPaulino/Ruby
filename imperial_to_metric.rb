@@ -1,4 +1,4 @@
-my_name = "Mariella Paulino"
+my_name = gets
 
 height_inches = 70 #hahaha not really, but whatever.
 
