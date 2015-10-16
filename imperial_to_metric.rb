@@ -1,4 +1,4 @@
-my_name = gets
+my_name = gets.chomp
 
 height_inches = 70 #hahaha not really, but whatever.
 
