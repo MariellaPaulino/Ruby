@@ -82,11 +82,21 @@
 # end
 
 # #=====================================
-# new loop that starts prints a line three times 
+# new loop that is an itinerator (?)
 # #=====================================
 
-data = [1, 75, 33, 42]
+# data = [1, 75, 33, 42]
 
-data. each do |x|
-    puts x 
-end
+# data. each do |x|
+#     puts x 
+# end
+
+# #=====================================
+# new loop that is an itinerator (?)
+# #=====================================
+
+# for n in 1..5 do 
+#     puts "we are at number #{n}."
+# end 
+
+#this reuses the range for the loop
