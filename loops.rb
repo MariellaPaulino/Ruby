@@ -1,25 +1,92 @@
+#This code is not DRY 
+# puts "1 bird on a wire. Haha!"
+# puts "2 bird on a wire. Haha!"
+# puts "3z bird on a wire. Haha!"
+
 #=====================================
-#working with booleans in if/else statements within the parameters we had for hiking .  The new aprameter is if it is raining 
+#Create a FOR loop that prints from 2 to 100 
 #=====================================
+# puts "1 bird on a wire. Haha!" #print the first one
 
-def to_go_or_not(temp, weather)    
-    if temp > 50 && weather == "no"
-        puts "I'm going hiking today"
-    elsif temp > 50 && weather == "yes" 
-        puts "Even though it's warm out, I'm not into walking in the rain."    
-    elsif temp > 30 
-        puts "#{temp}! I'm staying inside today!"    
-    else
-        puts "#{temp} is freaking cold! I gotta get out there and chop some wood for a fire!"    
-    end
-end        
+# for n in 2...100 #this are the parameters of what we are printing 
+#     puts "#{n} bords on a wire. hahaha" #this is what we are printing 
+# end
 
-puts "what's the temperature going to be outside today?"
-temperature = gets.chomp.to_i
+#=====================================
+#Create an INFINITE WHILE loop that prints x is the loneliest number 
+#=====================================
+# x = 0 
+# while x <= 10 
+#     puts " #{x} is the loneliest number"
+# end
 
-if temperature > 32
-    puts "is it going to rain today, yes or no?"
-    weather = gets.chomp
+#=====================================
+#Create an  WHILE loop that prints x and then prints x plus 1 until you get to 10 
+#=====================================
+# x = 0 
+# while x <= 10 
+#     puts " #{x} is the loneliest number"
+#     x += 1  #this means the same as x = x+1
+# end
+
+#=====================================
+#Create an  WHILE loop that prints x and then prints x plus 2 until you get to 10 
+#=====================================
+# x = 0 
+# while x <= 10 
+#     puts " #{x} is the loneliest number"
+#     x += 2  #this means the same as x = x+2
+# end
+
+#=====================================
+#Create an  WHILE loop that prints x and then prints x isn't 10 yet 
+#=====================================
+# x = 0 
+
+# until x == 10 
+#     puts "#{x} isn't ten yet!"
+#     x += 1 
+# end 
+
+# #=====================================
+# #Create an  WHILE loop that prints x and then prints x isn't 10 yet .  followed by when ten is ten 
+# #=====================================
+# x = 0 
+
+# until x == 10 
+#     puts "#{x} isn't ten yet!"
+#   x += 1 
+#   puts "10 is 10"
+# end 
+
+
+# #=====================================
+# new loop that starts printing at 0 
+# #=====================================
+# 5.times do |x|
+#     puts "we are at number #{x}"
+# end
+
+# #=====================================
+# new loop that starts printing at 1 
+# #=====================================
+# 5.times do |x|
+#     puts "we are at number #{x+1}"
+# end
+
+# #=====================================
+# new loop that starts prints a line three times 
+# #=====================================
+# 3.times do 
+#     puts "she loves you, yeah yeah yeah"
+# end
+
+# #=====================================
+# new loop that starts prints a line three times 
+# #=====================================
+
+data = [1, 75, 33, 42]
+
+data. each do |x|
+    puts x 
 end
-
-to_go_or_not(temperature, weather)
