@@ -16,7 +16,7 @@
 # end 
 
 #=====================================
-#create an if program that uses operators and if/else 
+#create an if program that uses operators and if/else (did this by myself before doing the method)
 #=====================================
 # tomorrows_temperature = 50 
 
@@ -50,19 +50,36 @@
 #create an if program that created multiple variables but has a specific one for 23 
 #=====================================
 
+# puts "What is tomorrow's temperature?" #asks me a question 
+# x =gets.chomp.to_i #gets the answer to the question and translate is as an integer 
+
+# def going_hiking(x) #define the function 
+#     if x >= 50 #create a requirement to move forward 
+#         puts "#{x} degrees is awesome for hiking" #put this in there if the above is true 
+#     end #end the function 
+#     if x < 50 #otherwise do this requirement to move forward 
+#         puts "#{x} degrees is netflix and chill weather!" #put this in there if the above is true
+#     end  #end the function 
+#     if x == 23
+#         puts "its exactly 23 degrees"
+#     end
+# end #end the function 
+
+# puts going_hiking(x) 
+
+#=====================================
+#create an if program that creates if/else in its function and keeps the code DRY
+#=====================================
 puts "What is tomorrow's temperature?" #asks me a question 
 x =gets.chomp.to_i #gets the answer to the question and translate is as an integer 
 
-def going_hiking(x) #define the function 
-    if x >= 50 #create a requirement to move forward 
-        puts "#{x} degrees is awesome for hiking" #put this in there if the above is true 
-    end #end the function 
-    if x < 50 #otherwise do this requirement to move forward 
-        puts "#{x} degrees is netflix and chill weather!" #put this in there if the above is true
-    end  #end the function 
-    if x == 23
-        puts "its exactly 23 degrees"
-    end
-end #end the function 
+def going_hiking (x)
+    if x > 50 
+        puts "I'm going hiking"
+    else 
+        puts "netflix and chill it is!"
+    end 
+end 
 
-puts going_hiking(x) 
+puts going_hiking(x)
+        
