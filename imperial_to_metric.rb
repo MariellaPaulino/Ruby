@@ -3,7 +3,10 @@ def convert_inches_to_centimeters(x)
     return height_centimeters
 end 
 
-
+def convert_pounds_to_kilograms(x)
+    weight_pounds = x* 0.453592
+    return weight_pounds
+end 
 
 puts "what is your name?"
 
@@ -23,7 +26,7 @@ weight_pounds = gets.chomp.to_i
 # height_centimeters= height_inches * 2.54 >> this is changed because of the function we have above 
 height_centimeters = convert_inches_to_centimeters(height_inches)
 
-weight_kilograms = weight_pounds * 0.453592
+weight_kilograms = convert_pounds_to_kilograms(weight_pounds)
 
 puts my_name + " is " + height_centimeters.to_s + " cm and " + weight_kilograms.to_s + "kg."
 
