@@ -75,9 +75,9 @@ x =gets.chomp.to_i #gets the answer to the question and translate is as an integ
 
 def going_hiking (x)
     if x > 50 
-        puts "I'm going hiking"
+        puts "#{x} degrees is awesome! I'm going hiking" #this puts the variable inside the string
     else 
-        puts "netflix and chill it is!"
+        puts "#{x} degrees is netflix and chill it is!" #this puts the variable inside the string 
     end 
 end 
 
