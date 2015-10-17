@@ -80,7 +80,7 @@
 # Hello
 
 #========================
-#array sample four  . reading array and shuffle
+#array sample five  . reading array and shuffle
 #========================
 # my_array = []
 # my_array [0] = "Hello"
@@ -95,7 +95,7 @@
 #*shuffled array 
 
 #========================
-#array sample four  . adding 
+#array sample six  . adding 
 #========================
 # scores = [100, 85, 30, 79] # four variables 
 
@@ -112,19 +112,37 @@
 # #the toal is 294 
 
 #========================
-#array sample four  . adding and average 
+#array sample seven  . adding and average 
+#========================
+
+# scores = [100, 85, 30, 79]
+
+# counter = 0
+# sum = 0
+
+# while counter < scores.length
+#   sum = sum + scores[counter]
+#   counter += 1
+# end
+
+# average = sum.to_f / scores.length #this takes the final sum and then divides it by the scores.length 
+
+# puts "The average is #{average}"
+
+#========================
+#array sample eight  . DRYing code and adding the total 
 #========================
 
 scores = [100, 85, 30, 79]
-
 counter = 0
 sum = 0
 
-while counter < scores.length
-   sum = sum + scores[counter]
-   counter += 1
+scores.each do |score|
+
+   sum = sum + score
+
+   counter += 1 # same as counter = counter + 1
+
 end
 
-average = sum.to_f / scores.length #this takes the final sum and then divides it by the scores.length 
-
-puts "The average is #{average}"
+puts "The total is #{sum}"
